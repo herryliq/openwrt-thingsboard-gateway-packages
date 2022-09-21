@@ -50,9 +50,6 @@ define Py3Package/python3-$(PKG_NAME)/install
 
 	$(INSTALL_DIR) $(1)/etc
 	$(CP) ./files/etc/* $(1)/etc
-
-	$(INSTALL_DIR) $(1)/tmp
-	$(CP) ./files/var/* $(1)/tmp
 endef
 
 $(eval $(call Py3Package,python3-$(PKG_NAME)))
